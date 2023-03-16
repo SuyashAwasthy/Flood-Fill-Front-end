@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(15, 5, 104);
+    color: white;
+    height: 51px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-bottom: 40px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 1px;
+    background-color: black;
+    padding: 10px;
+    margin-right: 20px;
+    
+}
+
+.cell {
+    background-color: white;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.cell:hover{
+    background-color: rgb(201, 173, 224);
+}
+
+.start {
+    background-color: green;
+}
+
+.end {
+    background-color: red;
+}
+
+.wall {
+    background-color: black;
+}
+
+.visited {
+    background-color: yellow;
+}
+
+.path {
+    background-color: blue;
+}
+
+button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(15, 5, 104);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1357b9;
+  }
